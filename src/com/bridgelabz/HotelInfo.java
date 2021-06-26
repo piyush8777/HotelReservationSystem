@@ -3,10 +3,18 @@ package com.bridgelabz;
 public class HotelInfo {
 	public String hotelName;
 	public int rateForRegularCustomer;
+	public int ratings;
 	
-	public HotelInfo(String hotelName,int rateForRegularCustomer) {
+	public HotelInfo(String hotelName,int rateForRegularCustomer,int hotelratings) {
 		this.hotelName=hotelName;
 		this.rateForRegularCustomer=rateForRegularCustomer;
+		this.ratings=hotelratings;
+	}
+	public int getRatings() {
+		return ratings;
+	}
+	public void setRatings(int ratings) {
+		this.ratings=ratings;
 	}
 	public String getHotelName() {
 		return hotelName;
